@@ -37,7 +37,7 @@ class CartController extends Controller
                 ], 200);
             }
 
-            // Duyệt qua từng variation và thêm hình ảnh + quantity vào mảng
+            // Duyệt qua từng variation và thêm hình ảnh + quantity vào mảng // Hello
             $variations->transform(function ($variation) use ($data) {
                 // Thêm quantity
                 $matchedVariant = collect($data)->firstWhere('variant', $variation->id);
